@@ -2,7 +2,7 @@
 
 module BatchRename
   class Editor::DiffMerge < Editor::EditorBase
-    PATH = '/usr/local/bin/diffmerge'
+    PATH = 'diffmerge'
 
     def launch!
       unless system(PATH, *args)
