@@ -4,25 +4,24 @@ This gem provides a CLI command:
 
 > `batch-rename`
 
-to **bulk rename files** in OS&nbsp;X using an interactive text editor.
+to **bulk rename files** in Linux or macOS using an interactive text editor.
 
 
 ## Background
 
-This gem was inspired by a question from StackExchange user [Yuriy Babenko](http://apple.stackexchange.com/users/71676) in June 2015 where he asked whether there was [an OS&nbsp;X app/way to batch rename files via a purely text interface](http://apple.stackexchange.com/questions/192984).
+This gem was inspired by a question from StackExchange user [Yuriy Babenko](http://apple.stackexchange.com/users/71676) in June 2015 where they asked whether there was [an OS&nbsp;X app/way to batch rename files via a purely text interface](http://apple.stackexchange.com/questions/192984).
 
 
 ## System requirements
 
-* This gem has been tested on **OS&nbsp;X Yosemite only.**  
-It should be trivial though to make it work on Windows, Linux, or OS&nbsp;X pre-Yosemite. PRs are welcome!
+* This gem has been tested on macOS and Linux only.
 
 * The gem **depends on DiffMerge** to be installed, a visual diff editor developed by SourceGear. See the next section for details.
 
 
 ## Installation
 
-1. First, make sure you have [DiffMerge](https://sourcegear.com/diffmerge) installed. You can either download it from [SourceGear’s website](https://sourcegear.com/diffmerge/downloads.php) or via [Homebrew Cask](http://caskroom.io) (`brew cask install diffmerge`).
+1. First, make sure you have [DiffMerge](https://sourcegear.com/diffmerge) installed. You can either download it from [SourceGear’s website](https://sourcegear.com/diffmerge/downloads.php) or search your system package manager for `diffmerge`.
 
 2. Install the gem:
 
@@ -33,7 +32,7 @@ gem install batch_rename
 
 ## Usage
 
-1. Open Terminal.app.
+1. Open your terminal.
 
 2. `cd` to the directory whose content you want to rename.
 
@@ -63,7 +62,7 @@ A separate [license agreement for DiffMerge](https://sourcegear.com/diffmerge/we
 
 ## License
 
-Copyright (c) 2015, Claudia Pellegrino
+Copyright (c) 2015 – 2022, Claudia Pellegrino
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
